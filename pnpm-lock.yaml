@@ -13,10 +13,10 @@ importers:
         version: 1.4.1(@types/react@19.2.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@vercel/analytics':
         specifier: ^1.6.1
-        version: 1.6.1(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8(@typescript-eslint/types@8.59.2))(vue@3.5.30(typescript@5.9.3))
+        version: 1.6.1(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8)(vue@3.5.30(typescript@5.9.3))
       '@vercel/speed-insights':
         specifier: ^2.0.0
-        version: 2.0.0(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8(@typescript-eslint/types@8.59.2))(vue@3.5.30(typescript@5.9.3))
+        version: 2.0.0(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8)(vue@3.5.30(typescript@5.9.3))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -49,7 +49,7 @@ importers:
         version: 19.2.5(react@19.2.5)
       shadcn:
         specifier: ^4.0.0
-        version: 4.0.0(@types/node@20.19.37)(typescript@5.9.3)
+        version: 4.0.0(@types/node@25.7.0)(typescript@5.9.3)
       shiki:
         specifier: ^4.0.2
         version: 4.0.2
@@ -68,13 +68,13 @@ importers:
         version: 0.7.0
       '@changesets/cli':
         specifier: ^2.31.0
-        version: 2.31.0(@types/node@20.19.37)
+        version: 2.31.0(@types/node@25.7.0)
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.3.0
       '@types/node':
-        specifier: ^20
-        version: 20.19.37
+        specifier: ^25
+        version: 25.7.0
       '@types/react':
         specifier: ^19
         version: 19.2.14
@@ -106,8 +106,8 @@ importers:
   packages/cli:
     devDependencies:
       '@types/node':
-        specifier: ^20.0.0
-        version: 20.19.37
+        specifier: ^25.7.0
+        version: 25.7.0
       typescript:
         specifier: ^5.0.0
         version: 5.9.3
@@ -1444,8 +1444,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@20.19.37':
-    resolution: {integrity: sha512-8kzdPJ3FsNsVIurqBs7oodNnCEVbni9yUEkaHbgptDACOPW04jimGagZ51E6+lXUwJjgnBw+hyko/lkFWCldqw==}
+  '@types/node@25.7.0':
+    resolution: {integrity: sha512-z+pdZyxE+RTQE9AcboAZCb4otwcrvgHD+GlBpPgn0emDVt0ohrTMhAwlr2Wd9nZ+nihhYFxO2pThz3C5qSu2Eg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -2121,9 +2121,6 @@ packages:
   devalue@5.6.3:
     resolution: {integrity: sha512-nc7XjUU/2Lb+SvEFVGcWLiKkzfw8+qHI7zn8WYXKkLMgfGSHbgCEaR6bJpev8Cm6Rmrb19Gfd/tZvGqx9is3wg==}
 
-  devalue@5.8.0:
-    resolution: {integrity: sha512-2zA9pFEsnp7vWBZbXF5JAgAq0fsUIt/1XPbRiAmRV3lp/2C3upzH+sADiyy66aFCihoLEsrQHxNM5w1gIDfsBg==}
-
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
@@ -2363,14 +2360,6 @@ packages:
 
   esrap@2.2.3:
     resolution: {integrity: sha512-8fOS+GIGCQZl/ZIlhl59htOlms6U8NvX6ZYgYHpRU/b6tVSh3uHkOHZikl3D4cMbYM0JlpBe+p/BkZEi8J9XIQ==}
-
-  esrap@2.2.6:
-    resolution: {integrity: sha512-WN0clHt0a4mzC780UBVVBpsj4vSSjOFNRd2WjYtduB9HeKxm1sjHMNUwLEHVjI3FdCQD/Hurgz9ftbKEzP79Ow==}
-    peerDependencies:
-      '@typescript-eslint/types': ^8.2.0
-    peerDependenciesMeta:
-      '@typescript-eslint/types':
-        optional: true
 
   esrecurse@4.3.0:
     resolution: {integrity: sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==}
@@ -3925,9 +3914,6 @@ packages:
   tailwind-merge@3.5.0:
     resolution: {integrity: sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==}
 
-  tailwindcss@4.2.4:
-    resolution: {integrity: sha512-HhKppgO81FQof5m6TEnuBWCZGgfRAWbaeOaGT00KOy/Pf/j6oUihdvBpA7ltCeAvZpFhW3j0PTclkxsd4IXYDA==}
-
   tailwindcss@4.3.0:
     resolution: {integrity: sha512-y6nxMGB1nMW9R6k96e5gdIFzcfL/gTJRNaqGes1YvkLnPVXzWgbqFF2yLC0T8G774n24cx3Pe8XrKoniCOAH+Q==}
 
@@ -4046,8 +4032,8 @@ packages:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.21.0:
+    resolution: {integrity: sha512-w9IMgQrz4O0YN1LtB7K5P63vhlIOvC7opSmouCJ+ZywlPAlO9gIkJ+otk6LvGpAs2wg4econaCz3TvQ9xPoyuQ==}
 
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
@@ -4539,7 +4525,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@changesets/cli@2.31.0(@types/node@20.19.37)':
+  '@changesets/cli@2.31.0(@types/node@25.7.0)':
     dependencies:
       '@changesets/apply-release-plan': 7.1.1
       '@changesets/assemble-release-plan': 6.0.10
@@ -4555,7 +4541,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@20.19.37)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.7.0)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       enquirer: 2.4.1
@@ -4947,38 +4933,38 @@ snapshots:
 
   '@inquirer/ansi@1.0.2': {}
 
-  '@inquirer/confirm@5.1.21(@types/node@20.19.37)':
+  '@inquirer/confirm@5.1.21(@types/node@25.7.0)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@20.19.37)
-      '@inquirer/type': 3.0.10(@types/node@20.19.37)
+      '@inquirer/core': 10.3.2(@types/node@25.7.0)
+      '@inquirer/type': 3.0.10(@types/node@25.7.0)
     optionalDependencies:
-      '@types/node': 20.19.37
+      '@types/node': 25.7.0
 
-  '@inquirer/core@10.3.2(@types/node@20.19.37)':
+  '@inquirer/core@10.3.2(@types/node@25.7.0)':
     dependencies:
       '@inquirer/ansi': 1.0.2
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@20.19.37)
+      '@inquirer/type': 3.0.10(@types/node@25.7.0)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 20.19.37
+      '@types/node': 25.7.0
 
-  '@inquirer/external-editor@1.0.3(@types/node@20.19.37)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.7.0)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 20.19.37
+      '@types/node': 25.7.0
 
   '@inquirer/figures@1.0.15': {}
 
-  '@inquirer/type@3.0.10(@types/node@20.19.37)':
+  '@inquirer/type@3.0.10(@types/node@25.7.0)':
     optionalDependencies:
-      '@types/node': 20.19.37
+      '@types/node': 25.7.0
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -5530,9 +5516,9 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@20.19.37':
+  '@types/node@25.7.0':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.21.0
 
   '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
@@ -5702,18 +5688,18 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
 
-  '@vercel/analytics@1.6.1(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8(@typescript-eslint/types@8.59.2))(vue@3.5.30(typescript@5.9.3))':
+  '@vercel/analytics@1.6.1(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8)(vue@3.5.30(typescript@5.9.3))':
     optionalDependencies:
       next: 16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react: 19.2.5
-      svelte: 5.53.8(@typescript-eslint/types@8.59.2)
+      svelte: 5.53.8
       vue: 3.5.30(typescript@5.9.3)
 
-  '@vercel/speed-insights@2.0.0(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8(@typescript-eslint/types@8.59.2))(vue@3.5.30(typescript@5.9.3))':
+  '@vercel/speed-insights@2.0.0(next@16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react@19.2.5)(svelte@5.53.8)(vue@3.5.30(typescript@5.9.3))':
     optionalDependencies:
       next: 16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react: 19.2.5
-      svelte: 5.53.8(@typescript-eslint/types@8.59.2)
+      svelte: 5.53.8
       vue: 3.5.30(typescript@5.9.3)
 
   '@vue/compiler-core@3.5.30':
@@ -6158,9 +6144,6 @@ snapshots:
 
   devalue@5.6.3: {}
 
-  devalue@5.8.0:
-    optional: true
-
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
@@ -6566,13 +6549,6 @@ snapshots:
   esrap@2.2.3:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  esrap@2.2.6(@typescript-eslint/types@8.59.2):
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
-    optionalDependencies:
-      '@typescript-eslint/types': 8.59.2
-    optional: true
 
   esrecurse@4.3.0:
     dependencies:
@@ -7382,9 +7358,9 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.12.10(@types/node@20.19.37)(typescript@5.9.3):
+  msw@2.12.10(@types/node@25.7.0)(typescript@5.9.3):
     dependencies:
-      '@inquirer/confirm': 5.1.21(@types/node@20.19.37)
+      '@inquirer/confirm': 5.1.21(@types/node@25.7.0)
       '@mswjs/interceptors': 0.41.3
       '@open-draft/deferred-promise': 2.2.0
       '@types/statuses': 2.0.6
@@ -7746,7 +7722,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.19.37
+      '@types/node': 25.7.0
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -7982,7 +7958,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@4.0.0(@types/node@20.19.37)(typescript@5.9.3):
+  shadcn@4.0.0(@types/node@25.7.0)(typescript@5.9.3):
     dependencies:
       '@antfu/ni': 25.0.0
       '@babel/core': 7.29.0
@@ -8004,7 +7980,7 @@ snapshots:
       fuzzysort: 3.1.0
       https-proxy-agent: 7.0.6
       kleur: 4.1.5
-      msw: 2.12.10(@types/node@20.19.37)(typescript@5.9.3)
+      msw: 2.12.10(@types/node@25.7.0)(typescript@5.9.3)
       node-fetch: 3.3.2
       open: 11.0.0
       ora: 8.2.0
@@ -8258,33 +8234,9 @@ snapshots:
       magic-string: 0.30.21
       zimmerframe: 1.1.4
 
-  svelte@5.53.8(@typescript-eslint/types@8.59.2):
-    dependencies:
-      '@jridgewell/remapping': 2.3.5
-      '@jridgewell/sourcemap-codec': 1.5.5
-      '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
-      '@types/estree': 1.0.9
-      '@types/trusted-types': 2.0.7
-      acorn: 8.16.0
-      aria-query: 5.3.1
-      axobject-query: 4.1.0
-      clsx: 2.1.1
-      devalue: 5.8.0
-      esm-env: 1.2.2
-      esrap: 2.2.6(@typescript-eslint/types@8.59.2)
-      is-reference: 3.0.3
-      locate-character: 3.0.0
-      magic-string: 0.30.21
-      zimmerframe: 1.1.4
-    transitivePeerDependencies:
-      - '@typescript-eslint/types'
-    optional: true
-
   tagged-tag@1.0.0: {}
 
   tailwind-merge@3.5.0: {}
-
-  tailwindcss@4.2.4: {}
 
   tailwindcss@4.3.0: {}
 
@@ -8421,7 +8373,7 @@ snapshots:
       has-symbols: 1.1.0
       which-boxed-primitive: 1.1.1
 
-  undici-types@6.21.0: {}
+  undici-types@7.21.0: {}
 
   unicorn-magic@0.3.0: {}
 
